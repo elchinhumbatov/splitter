@@ -1,0 +1,19 @@
+@import '../../styles/colors';
+@import '../../styles/sizes';
+
+.btn {
+  text-transform: uppercase;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  color: $veryDark;
+  font-weight: $inputFontWeight;
+  background-color: $primary;
+  cursor: pointer;
+  transition: background-color .4s;
+
+  &:hover {
+    background-color: $lightGrayish;
+  }
+}

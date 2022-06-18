@@ -1,0 +1,126 @@
+@import "../../styles/colors";
+@import "../../styles/sizes";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $lightGrayish;
+}
+
+.content {
+  width: 800px;
+}
+
+.logo {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.calculatorApp {
+  display: flex;
+  padding: 20px;
+  // margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: 0px 20px 30px -7px rgba(94,122,125,0.35);
+  -webkit-box-shadow: 0px 20px 30px -7px rgba(94,122,125,0.35);
+  -moz-box-shadow: 0px 20px 30px -7px rgba(94,122,125,0.35);
+
+  @media (max-width: '768px') {
+    flex-direction: column;
+  }
+
+  .inputsBoxWrap {
+    width: 50%;
+
+    @media (max-width: '768px') {
+      width: 100%;
+    }
+
+    .billBox, .tipsBox, .peopleBox {
+      padding: 20px 10px;
+    }
+
+    .tipsBox {
+      .tips {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+
+        .tip {
+          width: 33%;
+          padding: 3px;
+
+          @media (max-width: '375px') {
+            width: 50%;
+          }
+
+          .tipContent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 7px 10px;
+            color: $white;
+            background-color: $veryDark;
+            border-radius: 5px;
+            font-size: $inputFontSize;
+            font-weight: $inputFontWeight;
+            cursor: pointer;
+            transition: background-color .5s, color 0.9s;
+
+            &:hover {
+              background-color: $lightGrayish;
+              color: $veryDark
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .totalBoxWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 10px;
+    padding: 25px 35px;
+    background-color: $veryDark;
+    border-radius: 10px;
+
+    @media (max-width: '768px') {
+      width: 100%;
+      margin: 20px 0 0 0;
+    }
+
+    .totalValues {
+      .amount {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+
+        .txt {
+          p {
+            font-size: 14px;
+            color: $white;
+          }
+          small {
+            font-size: 12px;
+            color: $grayish;
+          }
+        }
+
+        .value p {
+          font-size: 40px;
+          font-weight: $inputFontWeight;
+          color: $primary;
+        }
+      }
+
+    }
+  }
+}

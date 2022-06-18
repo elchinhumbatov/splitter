@@ -1,0 +1,15 @@
+@import '../../styles/colors';
+
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+
+  .title {
+    color: $darkGrayish;
+  }
+  .error {
+    color: $red;
+  }
+}

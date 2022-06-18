@@ -1,0 +1,37 @@
+@import '../../styles/colors';
+@import '../../styles/sizes';
+
+.inputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  img {
+    position: absolute;
+    left: 10px;
+  }
+  .input {
+    display: inline-block;
+    padding: 10px;
+    background-color: $veryLightGrayish;
+    outline: none;
+    border: 1px solid $veryLightGrayish;
+    border-radius: 5px;
+    text-align: right;
+    font-size: $inputFontSize;
+    font-weight: $inputFontWeight;
+    color: $veryDark;
+    width: 100%;
+  
+    &:hover, &:focus {
+      border-color: $primary;
+    }
+    &::placeholder {
+      color: $darkGrayish
+    }
+
+    &.error {
+      border-color: $red
+    }
+  }
+}
