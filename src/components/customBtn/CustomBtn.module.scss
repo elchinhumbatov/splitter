@@ -13,6 +13,14 @@
   cursor: pointer;
   transition: background-color .4s;
 
+  &:disabled {
+    background-color: $darkGrayish;
+    cursor: not-allowed;
+  }
+  &:disabled:hover {
+    background-color: $darkGrayish;
+  }
+
   &:hover {
     background-color: $lightGrayish;
   }

@@ -70,12 +70,15 @@
             font-size: $inputFontSize;
             font-weight: $inputFontWeight;
             cursor: pointer;
-            transition: background-color .5s, color 0.9s;
+            transition: background-color .3s, color .5s;
 
             &:hover {
               background-color: $lightGrayish;
               color: $veryDark
             }
+          }
+          .activeTip {
+            background-color: $primary;
           }
         }
       }
