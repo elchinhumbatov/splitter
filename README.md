@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/elchinhumbatov/splitter)
-- Live Site URL: [Add live site URL here](https://elchinhumbatov.github.io/splitter/)
+- Solution URL: [Link](https://github.com/elchinhumbatov/splitter)
+- Live Site URL: [Link](https://elchinhumbatov.github.io/splitter/)
 
 ## My process
 
